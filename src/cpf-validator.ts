@@ -1,1 +1,3 @@
-console.log("First Jest project");
+export function returnCpf() {
+    return "123456789-02";
+}
