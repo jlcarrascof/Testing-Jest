@@ -1,3 +1,3 @@
 export function returnCpf() {
-    return "123456789-02";
+    return "123456789-01";
 }
