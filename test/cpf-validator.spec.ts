@@ -1,7 +1,10 @@
-import { add, returnCpf } from "../src/cpf-validator"
+import { returnCpf } from "../src/cpf-validator"
 
 describe("Validate Cpf suite", () => {
-    it("Return a valid CPF", () => {
+
+
+    it("Return CPF with letters -> invalid", () => {
+        const cpf = '000000000aa';
         const result = returnCpf();
         expect(result).toBe("123456789-02");
     });
