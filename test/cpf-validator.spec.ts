@@ -1,7 +1,12 @@
-import { returnCpf } from "../src/cpf-validator"
+import { CpfValidator, returnCpf } from "../src/cpf-validator"
 
 describe("Validate Cpf suite", () => {
 
+    let cpfValidate: CpfValidator;
+
+    beforeEach(() => {
+        cpfValidate = new CpfValidator();
+    });
 
     it("Return CPF with letters -> invalid", () => {
         const cpf = '000000000aa';
