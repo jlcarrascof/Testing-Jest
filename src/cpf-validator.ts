@@ -4,6 +4,13 @@ export class CpfValidator {
             return false;
         }
 
+        if (cpf.length > 11) {
+            return false;
+        }
+
+
         return true;
     }
+
+
 }

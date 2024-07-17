@@ -20,5 +20,10 @@ describe("Validate Cpf suite", () => {
         expect(result).toBe(true);
     });
 
+    it("Return CPF with more of 11 numbers -> invalid", () => {
+        const cpf = '000000000000';
+        const result = cpfValidate.validate(cpf);
+        expect(result).toBe(false);
+    });
 
 })
