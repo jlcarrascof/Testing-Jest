@@ -14,4 +14,11 @@ describe("Validate Cpf suite", () => {
         expect(result).toBe(false);
     });
 
+    it("Return CPF only valid numbers", () => {
+        const cpf = '000000000';
+        const result = cpfValidate.validate(cpf);
+        expect(result).toBe(true);
+    });
+
+
 })
