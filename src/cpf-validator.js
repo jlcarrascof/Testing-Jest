@@ -11,6 +11,9 @@ var CpfValidator = /** @class */ (function () {
         if (cpf.length > 11) {
             return false;
         }
+        if (cpf.length < 11) {
+            return false;
+        }
         return true;
     };
     return CpfValidator;
