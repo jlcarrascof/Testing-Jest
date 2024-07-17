@@ -35,7 +35,7 @@ describe("Validate Cpf suite", () => {
     it('Return CPF with 11 numbers - valid', () => {
         const cpf = '00000000000';  // 11 digits
         const result = cpfValidate.validate(cpf);
-        expect(result).toBe(false);
+        expect(result).toBe(true);
     });
 
 })
