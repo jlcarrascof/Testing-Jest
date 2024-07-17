@@ -3,5 +3,7 @@ export class CpfValidator {
         if (!(/^\d+$/.test(cpf))) {
             return false;
         }
+
+        return true;
     }
 }

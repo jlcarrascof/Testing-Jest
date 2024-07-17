@@ -8,6 +8,7 @@ var CpfValidator = /** @class */ (function () {
         if (!(/^\d+$/.test(cpf))) {
             return false;
         }
+        return true;
     };
     return CpfValidator;
 }());
