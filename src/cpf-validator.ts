@@ -1,7 +1,7 @@
-export function returnCpf() {
-    return "123456789-01";
-}
-
-export function add(a: number, b: number): number {
-    return a + b;
+export class CpfValidator {
+    public validate(cpf: string) {
+        if (!(/^\d+$/.test(cpf))) {
+            return false;
+        }
+    }
 }
